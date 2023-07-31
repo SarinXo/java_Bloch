@@ -23,6 +23,9 @@ public class RandomClass {
         return new RandomClass(randomValue);
     }
 
+
+    //For final classes
+    //or instance-controll
     public static RandomClass singleCreate(int randomValue){
         if (INSTANCE == null) {
             return new RandomClass(randomValue);
