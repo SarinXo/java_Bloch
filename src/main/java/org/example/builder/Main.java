@@ -13,5 +13,11 @@ public class Main {
                         .setVar1(101)
                         .build();
 
+        AbstractPizza pepperoni = new Pepperoni.Builder()
+                        .addTopping(AbstractPizza.Topping.PEPPER)
+                        .addTopping(AbstractPizza.Topping.MUSHROOM)
+                        .setSize(Pepperoni.Size.LARGE)
+                        .build();
+        System.out.println("complete");
     }
 }
