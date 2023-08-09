@@ -1,5 +1,6 @@
 package org.example.resource;
 
+import java.lang.ref.Cleaner;
 import java.util.regex.Pattern;
 
     //чьи операции дорогие, мы можем выносить и переиспользовать
@@ -10,5 +11,5 @@ public class Example {
     static boolean isRomanNumeral(String s) {
         return ROMAN.matcher(s).matches();
     }
-
+    //И
 }
