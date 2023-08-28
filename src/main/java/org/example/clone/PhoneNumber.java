@@ -1,6 +1,6 @@
 package org.example.clone;
 
-public class PhoneNumber {
+public class PhoneNumber implements Cloneable {
     //без интерфейса clone
     @Override
     public PhoneNumber clone(){
