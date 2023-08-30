@@ -42,4 +42,19 @@ public class HashTable<K, V> implements Cloneable{
             throw new AssertionError();
         }
     }
+
+    //Копирующий конструктор и фабрика
+    //intelij уже подсказывает
+    public HashTable<K, V> copyConstructor(HashTable<K, V> hashTable){
+        HashTable<K, V>newHashTable = new HashTable<>(hashTable.buckets.length);
+        newHashTable.buckets = hashTable.buckets.clone();
+        return newHashTable;
+    }
+
+    public static<K, V> HashTable<K, V> copyFabric(HashTable<K, V> hashTable){
+        HashTable<K, V>newHashTable = new HashTable<>(hashTable.buckets.length);
+        newHashTable.buckets = hashTable.buckets.clone();
+        return newHashTable;
+    }
+
 }
